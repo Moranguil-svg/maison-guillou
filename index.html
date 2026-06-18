@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Guillou - Boulangerie Artisanale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.svg" alt="Maison Guillou" class="logo-img">
+                <span class="logo-text">Maison Guillou</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#produits" class="nav-link">Nos Produits</a></li>
+                <li><a href="#apropos" class="nav-link">À Propos</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue à Maison Guillou</h1>
+            <p>Découvrez notre passion pour l'artisanat boulanger depuis plus de 20 ans</p>
+            <button class="cta-button" onclick="document.getElementById('produits').scrollIntoView({behavior: 'smooth'})">Découvrir nos produits</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Produits -->
+    <section id="produits" class="produits">
+        <div class="container">
+            <h2 class="section-title">Nos Produits</h2>
+            <p class="section-subtitle">Tous nos produits sont faits avec passion et des ingrédients de qualité</p>
+            
+            <!-- Pain -->
+            <div class="categorie">
+                <h3 class="categorie-title"><i class="fas fa-bread-slice"></i> Nos Pains</h3>
+                <div class="produits-grid">
+                    <div class="produit-card">
+                        <div class="produit-image pain-1"></div>
+                        <h4>Baguette Traditionnelle</h4>
+                        <p>Croustillante à l'extérieur, moelleuse à l'intérieur. Notre baguette phare depuis 20 ans.</p>
+                        <span class="prix">2,20 €</span>
+                    </div>
+                    <div class="produit-card">
+                        <div class="produit-image pain-2"></div>
+                        <h4>Pain Complet</h4>
+                        <p>Riche en fibres, savoureux et nourrissant. Parfait pour un petit-déjeuner sain.</p>
+                        <span class="prix">3,50 €</span>
+                    </div>
+                    <div class="produit-card">
+                        <div class="produit-image pain-3"></div>
+                        <h4>Pain aux Céréales</h4>
+                        <p>Un mélange de céréales sélectionnées pour un goût authentique et gourmand.</p>
+                        <span class="prix">3,80 €</span>
+                    </div>
+                    <div class="produit-card">
+                        <div class="produit-image pain-4"></div>
+                        <h4>Ciabatta</h4>
+                        <p>Pain italien moelleux, idéal pour les sandwichs et bruschetta.</p>
+                        <span class="prix">3,20 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pâtisserie -->
+            <div class="categorie">
+                <h3 class="categorie-title"><i class="fas fa-birthday-cake"></i> Nos Pâtisseries</h3>
+                <div class="produits-grid">
+                    <div class="produit-card">
+                        <div class="produit-image patisserie-1"></div>
+                        <h4>Croissants au Beurre</h4>
+                        <p>Délicatement feuilletés avec du beurre AOC. Irresistibles!</p>
+                        <span class="prix">1,50 €</span>
+                    </div>
+                    <div class="produit-card">
+                        <div class="produit-image patisserie-2"></div>
+                        <h4>Pain au Chocolat</h4>
+                        <p>Pâte feuilletée croustillante avec du chocolat premium belge.</p>
+                        <span class="prix">1,80 €</span>
+                    </div>
+                    <div class="produit-card">
+                        <div class="produit-image patisserie-3"></div>
+                        <h4>Tarte aux Fruits</h4>
+                        <p>Crème pâtissière maison et fruits frais de saison.</p>
+                        <span class="prix">5,50 €</span>
+                    </div>
+                    <div class="produit-card">
+                        <div class="produit-image patisserie-4"></div>
+                        <h4>Éclair au Chocolat</h4>
+                        <p>Pâte à choux légère, crème mousseline, glaçage intense.</p>
+                        <span class="prix">2,20 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snacks -->
+            <div class="categorie">
+                <h3 class="categorie-title"><i class="fas fa-utensils"></i> Nos Snacks</h3>
+                <div class="produits-grid">
+                    <div class="produit-card">
+                        <div class="produit-image snack-1"></div>
+                        <h4>Sandwich Jambon-Fromage</h4>
+                        <p>Pain frais avec jambon de qualité et fromage français.</p>
+                        <span class="prix">6,50 €</span>
+                    </div>
+                    <div class="produit-card">
+                        <div class="produit-image snack-2"></div>
+                        <h4>Quiche Lorraine</h4>
+                        <p>Préparée sur place, généreuse et gourmande.</p>
+                        <span class="prix">4,80 €</span>
+                    </div>
+                    <div class="produit-card">
+                        <div class="produit-image snack-3"></div>
+                        <h4>Fougasse aux Olives</h4>
+                        <p>Pain méditerranéen avec olives noires et herbes de Provence.</p>
+                        <span class="prix">3,50 €</span>
+                    </div>
+                    <div class="produit-card">
+                        <div class="produit-image snack-4"></div>
+                        <h4>Salé à la Tomate</h4>
+                        <p>Petit gâteau salé parfait pour l'apéritif.</p>
+                        <span class="prix">2,50 €</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À Propos -->
+    <section id="apropos" class="apropos">
+        <div class="container">
+            <div class="apropos-content">
+                <div class="apropos-text">
+                    <h2>À Propos de Maison Guillou</h2>
+                    <p>Fondée en 2004, Maison Guillou est une boulangerie artisanale attachée à préserver les traditions du métier. Chaque jour, nos boulangers se lèvent avant l'aube pour préparer du pain frais avec passion et dévouement.</p>
+                    <p>Nous utilisons uniquement des ingrédients de qualité : farine sélectionnée, beurre AOC, chocolat premium. Aucun additif, aucun conservateur. Juste du vrai pain, juste du vrai goût.</p>
+                    <div class="apropos-stats">
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p>Années d'expérience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Artisanal</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5000+</h3>
+                            <p>Clients heureux</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="apropos-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Formulaire -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>123 Rue de la Boulangerie<br>75001 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@maisongui​llou.fr</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lun-Ven: 6h30-20h<br>Sam-Dim: 7h-19h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Votre nom *" required>
+                    <input type="email" placeholder="Votre email *" required>
+                    <input type="tel" placeholder="Votre téléphone">
+                    <textarea placeholder="Votre message / Commande *" rows="6" required></textarea>
+                    <button type="submit" class="submit-btn">Envoyer ma commande</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Maison Guillou</h4>
+                    <p>Votre boulangerie artisanale de confiance depuis 2004.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#produits">Produits</a></li>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Infos Pratiques</h4>
+                    <ul>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Maison Guillou. Tous droits réservés. | Fait avec <i class="fas fa-heart"></i> par votre équipe</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
